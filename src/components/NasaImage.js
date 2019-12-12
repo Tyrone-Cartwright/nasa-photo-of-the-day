@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import NasaCard from './NasaCard'
 import axios from 'axios'
 
 const apiKey = "b65GJLSeI9Xttix36JAHMYZsSBniL8ptBolKhkY1"
@@ -19,6 +18,7 @@ export default function NasaImage() {
   }, [])
   return (
     <div className="constainer">
+      
       <img src={nasaImg.url} alt={nasaImg.title} />
       <div className="image-content">
         <h1 className="title">{nasaImg.title}</h1>
